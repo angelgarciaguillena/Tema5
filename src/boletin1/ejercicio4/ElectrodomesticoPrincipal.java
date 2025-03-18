@@ -5,7 +5,7 @@ import java.util.Set;
 
 public class ElectrodomesticoPrincipal {
 	
-	/*Creamos una lista*/
+	/*Creamos una lista para almacenar los electrodomesticos*/
 	private static Set<Electrodomestico> electrodomesticos = new HashSet<Electrodomestico>();
 	
 	public static void main(String[] args) {
