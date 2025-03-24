@@ -91,6 +91,15 @@ public class Futbolista implements Comparable<Futbolista> {
 	 */
 	@Override
 	public int compareTo(Futbolista o) {
-		return this.camiseta - o.camiseta;
+		
+		int resultado = 0;
+		
+		if(this.camiseta == o.camiseta) {
+			resultado = this.nombre.compareTo(o.nombre);
+		} else {
+			resultado = this.camiseta - o.camiseta;
+		}
+		
+		return resultado;
 	}	
 }

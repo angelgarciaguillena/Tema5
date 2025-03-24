@@ -13,7 +13,7 @@ public class FutbolistaPrincipal {
 		/*Creamos los futbolistas*/
 		Futbolista futbolista1 = new Futbolista(10, "Alfonso", 42, 82);
 		Futbolista futbolista2 = new Futbolista(8, "Alberto", 37, 94);
-		Futbolista futbolista3 = new Futbolista(2, "Pablo",22, 55);
+		Futbolista futbolista3 = new Futbolista(10, "Pablo",22, 55);
 		Futbolista futbolista4 = new Futbolista(7, "Antonio", 18, 69);
 		Futbolista futbolista5 = new Futbolista(11, "Jose", 55, 72);
 		
