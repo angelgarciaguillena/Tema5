@@ -12,12 +12,12 @@ public interface Animal {
 	void comer();
 	
 	/**
-     * Método que representa la funcion de dormir de un animal.
-     */
+	 * Metodo que representa la funcion de dormir de un animal
+	 */
 	void dormir();
 	
 	/**
-     * Método que representa la funcion de hacer ruido de un animal.
-     */
+	 * Metodo que representa la funcion de dormir de un animal
+	 */
 	void hacerRuido();
 }

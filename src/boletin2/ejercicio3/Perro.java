@@ -35,11 +35,11 @@ public class Perro extends AnimalDomestico{
 	}
 	
 	/**
-	 * Método hacerCaso que se encarga de que el perro haga
-     * caso el 90% de las veces y devuelve true si hace caso 
-     * o false si no lo hace.
-     * 
-     * @return Devuelve true si hace caso o false si no lo hace
+	 * Metodo hacerCaso que se encarga de que el perro haga
+	 * caso el 90% de las veces y devuelve true si hace caso
+	 * o false si no lo hace
+	 * 
+	 * @return Devuelve true si hace caso o false si no lo hace
 	 */
 	@Override
 	public boolean hacerCaso() {
