@@ -35,13 +35,13 @@ public class Gato extends AnimalDomestico{
 		System.out.println("Miau");
 	}
 	
-	 /**
-     * Método hacerCaso que se encarga de que el gato haga
+	/**
+	 * Método hacerCaso que se encarga de que el gato haga
      * caso el 5% de las veces y devuelve true si hace caso 
      * o false si no lo hace.
      * 
      * @return Devuelve true si hace caso o false si no lo hace
-     */
+	 */
 	@Override
 	public boolean hacerCaso() {
 		Random rand = new Random();

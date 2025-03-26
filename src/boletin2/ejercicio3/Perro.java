@@ -34,13 +34,13 @@ public class Perro extends AnimalDomestico{
 		System.out.println("Guau");	
 	}
 	
-	 /**
-     * Método hacerCaso que se encarga de que el perro haga
+	/**
+	 * Método hacerCaso que se encarga de que el perro haga
      * caso el 90% de las veces y devuelve true si hace caso 
      * o false si no lo hace.
      * 
      * @return Devuelve true si hace caso o false si no lo hace
-     */
+	 */
 	@Override
 	public boolean hacerCaso() {
 		Random rand = new Random();

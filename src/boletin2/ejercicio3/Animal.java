@@ -7,8 +7,8 @@ package boletin2.ejercicio3;
 public interface Animal {
 	
 	/**
-     * Método que representa la funcion de comer de un animal.
-     */
+	 * Metodo que representa la funcion de comer de un animal
+	 */
 	void comer();
 	
 	/**
