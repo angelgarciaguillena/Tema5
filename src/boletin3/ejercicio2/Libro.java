@@ -5,12 +5,12 @@ public class Libro extends Ficha {
 	/**
 	 * Atributo que almacena el autor del libro
 	 */
-	private String autor;
+	private String autor = "No especificado";
 	
 	/**
 	 * Atributo que almacena la editorial del libro
 	 */
-	private String editorial;
+	private String editorial = "No especificado";
 	
 	/**
 	 * Constructor que inicializa los atributos de la clase Libro y los heredados
@@ -32,10 +32,32 @@ public class Libro extends Ficha {
 			this.editorial = editorial;
 		}
 	}
-
-	@Override
-	public int tiempoPrestamo() {
-		return 0;
+	
+	/**
+	 * Funcion que devuelve el autor
+	 * 
+	 * @return Devuelve el autor
+	 */
+	public String getAutor() {
+		return autor;
 	}
 
+	/**
+	 * Funcion que devuelve la editorial
+	 * 
+	 * @return Devuelve la editorial
+	 */
+	public String getEditorial() {
+		return editorial;
+	}
+
+	/**
+	 * Funcion que devuelve el tiempo de prestamo del libro
+	 * 
+	 * @return Devuelve el tiempo de prestamo del libro
+	 */
+	@Override
+	public int tiempoPrestamo() {
+		return 15;
+	}
 }

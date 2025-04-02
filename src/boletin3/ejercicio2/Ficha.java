@@ -5,12 +5,12 @@ public abstract class Ficha {
 	/**
 	 * Atributo que almacena el numero identificador de la ficha
 	 */
-	private int identificador;
+	private int identificador = 0;
 	
 	/**
 	 * Atributo que almacena el titulo de la ficha
 	 */
-	private String titulo;
+	private String titulo = "No especificado";
 	
 	/**
 	 * Constructor que inicializa los atributos de la clase Ficha y 

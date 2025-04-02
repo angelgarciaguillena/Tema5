@@ -1,0 +1,53 @@
+class CuentaBancaria 
+	- int numeroCuenta
+	- double saldo
+	- TreeSet<Titular> titulares
+	--------------------------
+	CuentaBancaria(int numeroCuenta, double saldo, TreeSet<Titular> titulares)
+	--------------------------
+	+ getNumeroCuenta()
+	+ getSaldo()
+	+ getTitulares()
+	--------------------------
+	+ public boolean ingresar()
+	+ public boolean retirar()
+	--------------------------
+	+ public String toString()
+	+ public boolean equals(Object obj)
+
+class Titular implements Comparable<Titular>
+	- String dni
+	- String nombre
+	- String apellidos
+	- int telefono
+	--------------------------
+	Titular(String dni, String nombre, String apellidos, int telefono)
+	--------------------------
+	+ getDni()
+	+ getNombre()
+	+ getApellidos()
+	+ getTelefono()
+	--------------------------
+	+ public String toString()
+	+ public boolean equals(Object obj) 
+	+ public int compareTo(Titular titular2)
+
+class CuentaAhorro extends CuentaBancaria
+	- double cuotaMantenimiento
+	- double interesAnual
+	--------------------------
+	CuentaAhorro(int numeroCuenta, double saldo, TreeSet<Titular> titulares, double cuotaMantenimiento, double interesAnual)
+	--------------------------
+	+ getCuotaMantenimiento()
+	+ getInteresAnual()
+	--------------------------
+	+ public double saldoActualizado()
+	+ public double restarCuota()
+	--------------------------
+	+ public String toString()
+	+ public boolean equals(Object obj)
+	 
+class CuentaCorriente extends CuentaBancaria
+	
+class Transaccion 
+	
