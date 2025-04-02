@@ -37,7 +37,7 @@ public class ContactoPrincipal {
 		Collections.sort(contactos);
 		
 		/*Creamos un bucle for each para recorrer la lista*/
-		System.out.println("\n" + "Contactos");
+		System.out.println("\n" + "Contactos:");
 		for(Contacto contacto : contactos) {
 			System.out.println(contacto.toString());
 		}

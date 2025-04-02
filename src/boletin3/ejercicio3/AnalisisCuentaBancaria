@@ -7,12 +7,19 @@ class CuentaBancaria
 	--------------------------
 	+ getNumeroCuenta()
 	+ getSaldo()
-	+ getTitulares()
+	+ getTitular()
+	--------------------------
+	+ setSaldo()
+	+ setTitular()
 	--------------------------
 	+ public boolean ingresar()
 	+ public boolean retirar()
+	+ public boolean añadirTitular()
+	+ public boolean eliminarTitular()
+	+ public boolean mostrarTitulares()
 	--------------------------
 	+ public String toString()
+	+ public boolean equals (Object obj)
 
 class Titular implements Comparable<Titular>
 	- String dni
@@ -29,6 +36,7 @@ class Titular implements Comparable<Titular>
 	--------------------------
 	+ public String toString()
 	+ public int compareTo(Titular titular2)
+	+ public boolean equals (Object obj)
 
 class CuentaAhorro extends CuentaBancaria
 	- double cuotaMantenimiento
@@ -45,6 +53,36 @@ class CuentaAhorro extends CuentaBancaria
 	+ public String toString()
 	 
 class CuentaCorriente extends CuentaBancaria
+	- int porcentajeTransaccion
+	- int numeroTransacciones
+	- TreeSet<Transaccion> transacciones
+	--------------------------
+	CuentaCorriente(int numeroCuenta, double saldo, TreeSet<Titular> titulares, int porcentajeTransaccion, int numeroTransacciones, TreeSet<Transaccion> transacciones)
+	--------------------------
+	+ getPorcentajeTransaccion()
+	+ getNumeroTransacciones()
+	+ getTransacciones()
+	--------------------------
+	+ setNumeroTransacciones()
+	+ setTransacciones()
+	--------------------------
+	+ public añadirTransaccion()
+	+ public mostrarTransacciones()
+	--------------------------
+	+ public String toString()
 	
 class Transaccion 
-	
+	- int dia
+	- int mes
+	- int año
+	- String concepto
+	- double importe
+	--------------------------
+	+ getDia()
+	+ getMes()
+	+ getAño()
+	+ getConcepto()
+	+ getImporte()
+	--------------------------
+	+ public String toString()
+	+ public boolean equals (Object obj)

@@ -9,7 +9,7 @@ class abstract Ficha
 	--------------------------
 	+ public abstract int tiempoPrestamo()
 	+ public String toString()
-	+ public boolean equals()
+	+ public boolean equals(Object obj)
 	
 class Libro extends Ficha
 	- String autor
