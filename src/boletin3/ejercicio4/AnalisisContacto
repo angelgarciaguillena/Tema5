@@ -1,0 +1,32 @@
+class Contacto implements Comparable<Contacto>
+	- String nombre
+	- int telefono
+	--------------------------
+	public Contacto(String nombre, int telefono)
+	--------------------------
+	+ getNombre()
+	+ getTelefono()
+	--------------------------
+	+ public String toString()
+	+ public boolean equals(Object obj)
+	+ public int compareTo(Contacto contacto2)
+	
+class Persona extends Contacto
+	- String cumpleaños
+	--------------------------
+	public Persona(String nombre, int telefono, String cumpleaños)
+	--------------------------
+	+ getCumpleaños()
+	--------------------------
+	+ public String toString()
+	
+class Empresa extends Contacto
+	- String paginaWeb
+	--------------------------
+	public Empresa(String nombre, int telefono, String paginaWeb)
+	--------------------------
+	+ getPaginaWeb()
+	--------------------------
+	+ setPaginaWeb()
+	--------------------------
+	+ public String toString()

@@ -13,7 +13,6 @@ class CuentaBancaria
 	+ public boolean retirar()
 	--------------------------
 	+ public String toString()
-	+ public boolean equals(Object obj)
 
 class Titular implements Comparable<Titular>
 	- String dni
@@ -29,7 +28,6 @@ class Titular implements Comparable<Titular>
 	+ getTelefono()
 	--------------------------
 	+ public String toString()
-	+ public boolean equals(Object obj) 
 	+ public int compareTo(Titular titular2)
 
 class CuentaAhorro extends CuentaBancaria
@@ -45,7 +43,6 @@ class CuentaAhorro extends CuentaBancaria
 	+ public double restarCuota()
 	--------------------------
 	+ public String toString()
-	+ public boolean equals(Object obj)
 	 
 class CuentaCorriente extends CuentaBancaria
 	

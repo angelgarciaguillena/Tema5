@@ -69,4 +69,16 @@ public abstract class Ficha {
 	public String toString() {
 		return this.identificador + " - " + this.titulo;
 	}
+	
+	/**
+	 * Metodo equals que compara si los identificadores de las dos fichas son iguales y
+	 * devuelve true si dos fichas son iguales o false si no lo son
+	 * 
+	 * @return Devuelve true si las fichas son iguales o false si no lo son
+	 */
+	@Override
+	public boolean equals(Object obj) {
+		Ficha ficha2 = (Ficha) obj;
+		return this.identificador == ficha2.identificador;
+	}	
 }
