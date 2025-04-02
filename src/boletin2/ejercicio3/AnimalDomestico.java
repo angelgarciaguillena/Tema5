@@ -139,4 +139,14 @@ public abstract class AnimalDomestico implements Animal{
 	 */
 	@Override
 	public abstract void hacerRuido();
+	
+	/**
+	 * Metodo encargado de devolver la informacion del animal
+	 * 
+	 * @return Devuelve la informacion del animal
+	 */
+	@Override
+	public String toString() {
+		return this.nombre + " - " + this.raza + " - " + this.peso + "kg - " + this.color;
+	}
 }

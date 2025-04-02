@@ -46,4 +46,14 @@ public class Perro extends AnimalDomestico{
 		Random rand = new Random();
 		return rand.nextInt(0, 101) <= 90;
 	}
+	
+	/**
+	 * Metodo encargado de devolver la informacion del 
+	 * 
+	 * @return Devuelve la informacion del perro
+	 */
+	@Override
+	public String toString() {
+		return super.toString();
+	}
 }

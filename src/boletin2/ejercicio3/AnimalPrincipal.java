@@ -9,6 +9,7 @@ public class AnimalPrincipal {
 		
 		/*LLamamos a las funciones del gato*/
 		System.out.println("Gato");
+		System.out.println(gato.toString());
 		gato.comer();
 		gato.dormir();
 		gato.vacunar();
@@ -18,6 +19,7 @@ public class AnimalPrincipal {
 		
 		/*LLamamos a las funciones del perro*/
 		System.out.println( "\n" + "Perro");
+		System.out.println(perro.toString());
 		perro.comer();
 		perro.dormir();
 		perro.vacunar();

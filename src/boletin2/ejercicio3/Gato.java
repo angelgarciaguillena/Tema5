@@ -47,4 +47,14 @@ public class Gato extends AnimalDomestico{
 		Random rand = new Random();
 		return rand.nextInt(0, 101) <= 5;
 	}
+	
+	/**
+	 * Metodo encargado de devolver la informacion del gato
+	 * 
+	 * @return Devuelve la informacion del gato
+	 */
+	@Override
+	public String toString() {
+		return super.toString();
+	}
 }
