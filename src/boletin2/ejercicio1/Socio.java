@@ -2,6 +2,8 @@ package boletin2.ejercicio1;
 
 /**
  * Clase Socio destinada a crear un nuevo socio
+ * 
+ * @author Angel
  */
 public class Socio implements Comparable<Socio> {
 	

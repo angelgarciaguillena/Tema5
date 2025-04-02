@@ -9,6 +9,12 @@ AnimalDomestico implements Animal
 	- peso: double
 	- color: String
 	--------------------------
+	+ getPeso()
+	+ setPeso()
+	+ getNombre()
+	+ getRaza()
+	+ getColor()
+	--------------------------
 	+ vacunar()
 	+ abstract hacerCaso() : boolean
 	--------------------------

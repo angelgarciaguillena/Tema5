@@ -1,5 +1,10 @@
 package boletin2.ejercicio3;
 
+/**
+ * Clase Animal domestico destinada a crear un nuevo animal domestico
+ * 
+ * @author Angel
+ */
 public abstract class AnimalDomestico implements Animal{
 	
 	/**
@@ -50,6 +55,54 @@ public abstract class AnimalDomestico implements Animal{
 		}
 	}
 	
+	/**
+	 * Funcion que devuelve el peso del animal
+	 * 	
+	 * @return Devuelve el peso del animal
+	 */
+	public double getPeso() {
+		return peso;
+	}
+
+	/**
+	 * Funcion que modifica el peso del animal comprobando si el valor es 
+	 * valido antes de asignarlo
+	 * 
+	 * @param peso Peso del animal
+	 */
+	public void setPeso(double peso) {
+		if(peso > 0) {
+			this.peso = peso;
+		}
+	}
+	
+	/**
+	 * Funcion que devuelve el nombre del animal
+	 * 
+	 * @return Devuelve el nombre del animal
+	 */
+	public String getNombre() {
+		return nombre;
+	}
+	
+	/**
+	 * Funcion que devuelve la raza del animal
+	 * 
+	 * @return Devuelve la raza del animal
+	 */
+	public String getRaza() {
+		return raza;
+	}
+
+	/**
+	 * Funcion que devuelve el color del animal
+	 * 
+	 * @return Devuelve el color del animal
+	 */
+	public String getColor() {
+		return color;
+	}
+
 	/**
 	 * Metodo que indica que el animal ha sido vacunado
 	 */

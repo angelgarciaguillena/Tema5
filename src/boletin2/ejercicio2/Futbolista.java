@@ -2,6 +2,8 @@ package boletin2.ejercicio2;
 
 /**
  * Clase Futbolista destinada a crear un nuevo futbolista
+ * 
+ * @author Angel
  */
 public class Futbolista implements Comparable<Futbolista> {
 	
