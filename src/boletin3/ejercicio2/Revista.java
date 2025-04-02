@@ -1,5 +1,10 @@
 package boletin3.ejercicio2;
 
+/**
+ * Clase destinada a crear un nuevo objeto revista
+ * 
+ * @author Angel
+ */
 public class Revista extends Ficha{
 	
 	/**
@@ -60,5 +65,15 @@ public class Revista extends Ficha{
 	@Override
 	public int tiempoPrestamo() {
 		return 10;
+	}
+	
+	/**
+	 * Metodo que devuelve la informacion de la revista
+	 * 
+	 * @return Devuelve la informacion de la revista
+	 */
+	@Override
+	public String toString() {
+		return super.toString() + " - " + this.numeroRevista + " - " + this.añoPublicacion;
 	}
 }

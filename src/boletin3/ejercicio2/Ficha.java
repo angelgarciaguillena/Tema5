@@ -1,5 +1,10 @@
 package boletin3.ejercicio2;
 
+/**
+ * Clase destinada a crear un nuevo objeto ficha
+ * 
+ * @author Angel
+ */
 public abstract class Ficha {
 	
 	/**
@@ -54,4 +59,14 @@ public abstract class Ficha {
 	 * @return Devuelve el tiempo de prestamo
 	 */
 	public abstract int tiempoPrestamo();
+	
+	/**
+	 * Metodo que devuelve la informacion de la ficha
+	 * 
+	 * @return Devuelve la informacion de la ficha
+	 */
+	@Override
+	public String toString() {
+		return this.identificador + " - " + this.titulo;
+	}
 }

@@ -1,5 +1,10 @@
 package boletin3.ejercicio2;
 
+/**
+ * Clase destinada a crear un nuevo objeto libro
+ * 
+ * @author Angel
+ */
 public class Libro extends Ficha {
 
 	/**
@@ -59,5 +64,15 @@ public class Libro extends Ficha {
 	@Override
 	public int tiempoPrestamo() {
 		return 15;
+	}
+	
+	/**
+	 * Metodo que devuelve la informacion del libro
+	 * 
+	 * @return Devuelve la informacion del libro
+	 */
+	@Override
+	public String toString() {
+		return super.toString() + " - " + this.autor + " - " + this.editorial;
 	}
 }

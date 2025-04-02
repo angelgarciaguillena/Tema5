@@ -8,6 +8,7 @@ class abstract Ficha
 	+ getTitulo()
 	--------------------------
 	+ public abstract int tiempoPrestamo()
+	+ public String toString();
 	
 class Libro extends Ficha
 	- String autor
@@ -17,6 +18,9 @@ class Libro extends Ficha
 	--------------------------
 	+ getAutor()
 	+ getEditorial()
+	--------------------------
+	+ public int tiempoPrestamo()
+	+ public String toString()
 	
 class Revista extends Ficha
 	- int numeroRevista
@@ -26,6 +30,9 @@ class Revista extends Ficha
 	--------------------------
 	+ getNumeroRevista()
 	+ getAñoPublicacion()
+	--------------------------
+	+ public int tiempoPrestamo()
+	+ public String toString()
 	
 class DVD extends Ficha
 	enum Tipo{PELICULA, DOCUMENTAL, SERIE}
@@ -39,3 +46,6 @@ class DVD extends Ficha
 	+ getDirector()
 	+ getAño()
 	+ getTipo()
+	--------------------------
+	+ public int tiempoPrestamo()
+	+ public String toString()

@@ -1,9 +1,12 @@
 package boletin3.ejercicio2;
 
+/**
+ * Clase destinada a crear un nuevo objeto dvd
+ * 
+ * @author Angel
+ */
 public class DVD extends Ficha{
 	
-	
-
 	/**
 	 * Enumerado con los posibles tipos de dvd
 	 */
@@ -90,5 +93,15 @@ public class DVD extends Ficha{
 	@Override
 	public int tiempoPrestamo() {
 		return 5;
+	}
+	
+	/**
+	 * Metodo que devuelve la informacion del dvd
+	 * 
+	 * @return Devuelve la informacion del dvd
+	 */
+	@Override
+	public String toString() {
+		return super.toString() + " - " + this.director + " - " + this.año + " - " + this.tipo;
 	}
 }
