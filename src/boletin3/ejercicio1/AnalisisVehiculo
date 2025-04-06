@@ -19,13 +19,19 @@ class Vehiculo
 	+ getVelocidad()
 	--------------------------
 	+ setColor(String color)
+	+ setEncendido(boolean encendido)
+	+ setMarcha(int marcha)
+	+ setVelocidad(int velocidad)
 	--------------------------
 	+ void parar()
 	+ void arrancar()
 	+ void subirMarcha()
 	+ void bajarMarcha()
 	+ boolean acelerar(int velocidad)
-	+ boolean frenar(int velocidad)
+	+ boolean desacelerar(int velocidad)
+	--------------------------
+	+ String toString()
+	+ boolean equals()
 	
 class Turismo extends Vehiculo
 	enum TipoUso{PROFESIONAL, PARTICULAR}
@@ -54,6 +60,11 @@ class Camion extends Vehiculo
 class Motocicleta extends Vehiculo
 	- int cilindrada
 	--------------------------
+	- boolean carnet
+	--------------------------
 	Motocicleta (String marca, String modelo, String color, String matricula, int cilindrada)
+	--------------------------
+	+ getCilindrada()
+	+ isRequiereCarnet()
 	--------------------------
 	+ boolean requiereCarnet()
