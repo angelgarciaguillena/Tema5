@@ -1,4 +1,4 @@
-package boletin2.ejercicio1;
+package boletin4.ejercicio2;
 
 /**
  * Clase Socio destinada a crear un nuevo socio
@@ -31,6 +31,7 @@ public class Socio implements Comparable<Socio> {
 	 * @param edad Edada del socio
 	 */
 	public Socio(int id, String nombre, int edad) {
+		
 		if(id >= 0) {
 			this.id = id;
 		}
@@ -92,7 +93,7 @@ public class Socio implements Comparable<Socio> {
 	public int getId() {
 		return id;
 	}
-	
+
 	/**
 	 * Metodod toString que devuelve una cadena con la informacion del socio
 	 * 

@@ -1,4 +1,4 @@
-package boletin2.ejercicio2;
+package boletin4.ejercicio3;
 
 /**
  * Clase Futbolista destinada a crear un nuevo futbolista
@@ -54,7 +54,7 @@ public class Futbolista implements Comparable<Futbolista> {
 			this.goles = goles;
 		}
 	}
-
+	
 	/**
 	 * Funcion que se encarga de devolver el numero de camiseta del futbolista
 	 * 

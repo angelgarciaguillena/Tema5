@@ -1,0 +1,52 @@
+class abstract Ficha
+	- int identificador
+	- String titulo
+	--------------------------
+	Ficha(int identificador, String titulo)
+	--------------------------
+	+ getIdentificador()
+	+ getTitulo()
+	--------------------------
+	+ public abstract int tiempoPrestamo()
+	+ public String toString()
+	+ public boolean equals(Object obj)
+	
+class Libro extends Ficha
+	- String autor
+	- String editorial
+	--------------------------
+	Libro(int identificador, String titulo, String autor, String editorial)
+	--------------------------
+	+ getAutor()
+	+ getEditorial()
+	--------------------------
+	+ public int tiempoPrestamo()
+	+ public String toString()
+	
+class Revista extends Ficha
+	- int numeroRevista
+	- int añoPublicacion
+	--------------------------
+	Revista(int identificador, String titulo, int numeroRevista, int añoPublicacion)
+	--------------------------
+	+ getNumeroRevista()
+	+ getAñoPublicacion()
+	--------------------------
+	+ public int tiempoPrestamo()
+	+ public String toString()
+	
+class DVD extends Ficha
+	enum Tipo{PELICULA, DOCUMENTAL, SERIE}
+	--------------------------
+	- String director
+	- int año
+	- Tipo tipo
+	--------------------------
+	DVD(int identificador, String titulo, String director, int año, Tipo tipo)
+	--------------------------
+	+ getDirector()
+	+ getAño()
+	+ getTipo()
+	--------------------------
+	+ public int tiempoPrestamo()
+	+ public String toString()
