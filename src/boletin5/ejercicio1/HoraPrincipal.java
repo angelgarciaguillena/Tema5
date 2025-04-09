@@ -43,6 +43,7 @@ public class HoraPrincipal {
 				
 				/*Creamos una nueva hora*/
 				h = new Hora(hora, minuto, segundo);
+				
 			/*Si los segundos, minutos u horas son negativos lanzamos el mensaje de error*/
 			} catch (NegativeSecondException | NegativeMinuteException | NegativeHourException e) { 
 				System.out.println(e.getMessage());
