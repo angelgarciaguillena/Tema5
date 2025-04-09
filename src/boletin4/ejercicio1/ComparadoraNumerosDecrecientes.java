@@ -4,6 +4,8 @@ import java.util.Comparator;
 
 /**
  * Clase Comparadora encargada de indicar el orden de los numeros
+ * 
+ * @author Angel
  */
 public class ComparadoraNumerosDecrecientes implements Comparator<Integer>{
 	

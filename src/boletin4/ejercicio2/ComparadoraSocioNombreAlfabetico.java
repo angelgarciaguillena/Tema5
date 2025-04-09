@@ -4,6 +4,8 @@ import java.util.Comparator;
 
 /**
  * Clase que compara los socios para indicar su posicion
+ * 
+ * @author Angel
  */
 public class ComparadoraSocioNombreAlfabetico implements Comparator<Socio>{
 	

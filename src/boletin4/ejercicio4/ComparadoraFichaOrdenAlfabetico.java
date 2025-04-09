@@ -4,6 +4,8 @@ import java.util.Comparator;
 
 /**
  * Clase que se encarga de calcular la posicion de la ficha segun su orden alfabetico
+ * 
+ * @author Angel
  */
 public class ComparadoraFichaOrdenAlfabetico implements Comparator<Ficha>{
 	

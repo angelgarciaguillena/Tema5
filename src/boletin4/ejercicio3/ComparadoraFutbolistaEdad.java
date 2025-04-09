@@ -5,6 +5,8 @@ import java.util.Comparator;
 /**
  * Clase encargada de determinar el orden de los futbolistas segun su edad de forma
  * ascendente
+ * 
+ * @author Angel
  */
 public class ComparadoraFutbolistaEdad implements Comparator<Futbolista> {
 	
