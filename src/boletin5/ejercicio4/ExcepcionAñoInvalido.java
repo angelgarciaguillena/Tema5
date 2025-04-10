@@ -10,8 +10,9 @@ public class ExcepcionAñoInvalido extends Exception{
 	 * 
 	 * @return Devuelve el mensaje de error
 	 */
+	@Override
 	public String toString() {
-		return "Error: El año introducido esta fuera del rango permitido";
+		return "Error: El año introducido es negativo";
 	}
 	
 	/**
@@ -19,7 +20,8 @@ public class ExcepcionAñoInvalido extends Exception{
 	 * 
 	 * @return Devuelve el mensaje con el error
 	 */
+	@Override
 	public String getMessage() {
-		return "Error: El año introducido esta fuera del rango permitido";
+		return "Error: El año introducido es negativo";
 	}
 }

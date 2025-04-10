@@ -10,8 +10,9 @@ public class ExcepcionMesInvalido extends Exception{
 	 * 
 	 * @return Devuelve el mensaje de error
 	 */
+	@Override
 	public String toString() {
-		return "Error: El mes introducido esta fuera del rango permitido";
+		return "Error: El mes introducido esta fuera del rango permitido (1-12)";
 	}
 	
 	/**
@@ -19,7 +20,8 @@ public class ExcepcionMesInvalido extends Exception{
 	 * 
 	 * @return Devuelve el mensaje con el error
 	 */
+	@Override
 	public String getMessage() {
-		return "Error: El mes introducido esta fuera del rango permitido";
+		return "Error: El mes introducido esta fuera del rango permitido (1-12)";
 	}
 }

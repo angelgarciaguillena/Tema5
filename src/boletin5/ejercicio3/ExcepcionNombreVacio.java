@@ -13,6 +13,7 @@ public class ExcepcionNombreVacio extends Exception{
 	 * 
 	 * @return Devuelve el mensaje que se lanza en caso de error
 	 */
+	@Override
 	public String toString() {
 		return "Error: No se ha introducido ningun nombre";
 	}
@@ -22,6 +23,7 @@ public class ExcepcionNombreVacio extends Exception{
 	 * 
 	 * @return Devuelve el mensaje de error
 	 */
+	@Override
 	public String getMessage() {
 		return "Error: No se ha introducido ningun nombre";
 	}

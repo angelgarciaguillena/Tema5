@@ -13,6 +13,7 @@ public class ExcepcionPrecioNegativo extends Exception{
 	 * 
 	 * @return Devuelve el mensaje que se lanza en caso de error
 	 */
+	@Override
 	public String toString() {
 		return "Error: El precio introducido no puede ser negativo";
 	}
@@ -22,6 +23,7 @@ public class ExcepcionPrecioNegativo extends Exception{
 	 * 
 	 * @return Devuelve el mensaje de error
 	 */
+	@Override
 	public String getMessage() {
 		return "Error: El precio introducido no puede ser negativo";
 	}

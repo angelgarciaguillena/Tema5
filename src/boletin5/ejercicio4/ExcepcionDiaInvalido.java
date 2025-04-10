@@ -10,6 +10,7 @@ public class ExcepcionDiaInvalido extends Exception{
 	 * 
 	 * @return Devuelve el mensaje de error
 	 */
+	@Override
 	public String toString() {
 		return "Error: El dia introducido esta fuera del rango permitido";
 	}
@@ -19,6 +20,7 @@ public class ExcepcionDiaInvalido extends Exception{
 	 * 
 	 * @return Devuelve el mensaje con el error
 	 */
+	@Override
 	public String getMessage() {
 		return "Error: El dia introducido esta fuera del rango permitido";
 	}
