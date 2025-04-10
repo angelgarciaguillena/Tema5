@@ -1,0 +1,100 @@
+interface Volumen
+	+ public boolean subirVolumnen()
+	+ public boolean bajarVolumen()
+	
+	
+interface Velocidad
+	+ public boolean subirVelocidad()
+	+ public boolean bajarVelocidad()
+
+
+class MandoADistancia implements Comparable<MandoADistancia>
+	- String modelo
+	- double anchura
+	- double altura
+	- double precio
+	- boolean encendido
+	--------------------------
+	public MandoADistancia(String modelo, double anchura, double altura, double precio, boolean encendido)
+	--------------------------
+	+ getModelo()
+	+ getAnchura()
+	+ getAltura()
+	+ getPrecio()
+	+ getEncendido()
+	--------------------------
+	+ setPrecio(double precio)
+	--------------------------
+	+ public boolean encender()
+	+ public boolean apagar()
+	--------------------------
+	@Override:
+	+ public int hashCode()
+	+ public boolean equals(Object o)
+	+ public String toString()
+	+ public int compareTo(MandoADistancio o)
+	
+	
+class MandoTelevision extends MandoADistancia implements Volumen
+	- int volumen
+	- int canal
+	--------------------------
+	public MandoTelevision(String modelo, double anchura, double altura, double precio, boolean encendido, int volumen, int canal)
+	--------------------------
+	+ getVolumen()
+	+ getCanal()
+	--------------------------
+	+ setCanal(int canal)
+	--------------------------
+	@Override:
+	+ public boolean subirVolumnen()
+	+ public boolean bajarVolumen()
+	+ public String toString()
+	
+	
+class MandoMiniCadena extends MandoADistancia implements Volumen
+	- int volumen = 0
+	--------------------------
+	public MandoMiniCadena(String modelo, double anchura, double altura, double precio, boolean encendido, int volumen)
+	--------------------------
+	+ getVolumen()
+	--------------------------
+	@Override:
+	+ public boolean subirVolumnen()
+	+ public boolean bajarVolumen()
+	+ public String toString()
+
+
+class MandoAcondicionado extends MandoADistancia implements Velocidad
+	- enum Modo{FRIO, CALOR}
+	--------------------------
+	- Modo modo = Modo.FRIO
+	- int temperatura
+	- int velocidad
+	--------------------------
+	public MandoAcondicionado(String modelo, double anchura, double altura, double precio, boolean encendido, int velocidad, Modo modo, int velocidad, int temperatura)
+	--------------------------
+	+ getModo()
+	+ getVelocidad()
+	+ getTemperatura()
+	--------------------------
+	+ setModo(String modo)
+	+ setTemperatura(int temperatura)
+	--------------------------
+	@Override:
+	+ public boolean subirVelocidad()
+	+ public boolean bajarVelocidad()
+	+ public String toString()
+	
+	
+class MandoAspiradora extends MandoADistancia implements Velocidad
+	- int velocidad = 0
+	--------------------------
+	public MandoAspiradora(String modelo, double anchura, double altura, double precio, boolean encendido, int velocidad)
+	--------------------------
+	+ getVelocidad()
+	--------------------------
+	@Override:
+	+ public boolean subirVelocidad()
+	+ public boolean bajarVelocidad()
+	+ public String toString()
